@@ -6,14 +6,36 @@ using System.Web.Mvc;
 
 namespace InfoLeafs.Controllers
 {
+    /// <summary>
+    /// Контроллер, отвечающий за Главну
+    /// </summary>
     public class HomeController : Controller
     {
-        // GET: Home
-        public ActionResult Index()
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public ActionResult News()
         {
             return View();
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public ActionResult Profile()
+        {
+            return View();
+        }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public ActionResult Subscription()
+        {
+            return View();
+        }
     }
 }
