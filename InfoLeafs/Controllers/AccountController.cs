@@ -17,10 +17,17 @@ namespace InfoLeafs.Controllers
         /// Так же приветствие и небольшое описание проекта
         /// </summary>
         /// <returns></returns>
-        public ActionResult Index() 
+
+        /// <summary>
+        /// Форма входа
+        /// </summary>
+        /// 
+        [HttpGet]
+        public ActionResult Login()
         {
             return View();
         }
+        
         /// <summary>
         /// Форма регистрации
         /// </summary>
@@ -28,12 +35,6 @@ namespace InfoLeafs.Controllers
         {
             return View();
         }
-        /// <summary>
-        /// Форма входа
-        /// </summary>
-        public ActionResult Login()
-        {
-            return View();
-        }
+        
     }
 }

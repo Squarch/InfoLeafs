@@ -19,16 +19,14 @@ namespace InfoLeafs.Controllers
         {
             return View();
         }
-
         /// <summary>
         /// 
         /// </summary>
         /// <returns></returns>
-        public ActionResult Profile()
+        public ActionResult MyProfile()
         {
             return View();
         }
-
         /// <summary>
         /// 
         /// </summary>
