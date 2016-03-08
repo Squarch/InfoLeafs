@@ -3,35 +3,33 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using InfoLeafs.Models;
 
 namespace InfoLeafs.Controllers
 {
     /// <summary>
-    /// Контроллер, отвечающий за Главну
+    /// Контроллер, отвечающий за шапку и быстрый переход по сайту
+    ///
     /// </summary>
     public class HomeController : Controller
     {
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <returns></returns>
         public ActionResult News()
         {
             return View();
         }
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <returns></returns>
         public ActionResult MyProfile()
         {
             return View();
         }
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <returns></returns>
         public ActionResult Subscription()
+        {
+            return View();
+        }
+        public ActionResult Search()
+        {
+            return View();
+        }
+        public ActionResult AnotherProfile()
         {
             return View();
         }
