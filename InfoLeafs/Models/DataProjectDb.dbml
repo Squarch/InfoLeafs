@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DatabaseUsers" Class="DataProjectDbDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\DatabaseUsers.mdf;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="DatabaseUsersConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.NewsFeed" Member="NewsFeed">
+    <Type Name="NewsFeed">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NewsFeedId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DataTimePublication" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="NewsFeedContent_NewsFeed" Member="NewsFeedContent" ThisKey="NewsFeedId" OtherKey="Id" Type="NewsFeedContent" IsForeignKey="true" />
+      <Association Name="Users_NewsFeed" Member="Users" ThisKey="UserId" OtherKey="Id" Type="Users" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NewsFeedContent" Member="NewsFeedContent">
+    <Type Name="NewsFeedContent">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Content" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Association Name="NewsFeedContent_NewsFeed" Member="NewsFeed" ThisKey="Id" OtherKey="NewsFeedId" Type="NewsFeed" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Subscription" Member="Subscription">
+    <Type Name="Subscription">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdUser" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdSubscriber" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Users_Subscription" Member="Users" ThisKey="IdUser" OtherKey="Id" Type="Users" IsForeignKey="true" />
+      <Association Name="Users_Subscription1" Member="Users1" ThisKey="IdSubscriber" OtherKey="Id" Type="Users" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Users" Member="Users">
+    <Type Name="Users">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Login" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="AvatarPath" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="Users_NewsFeed" Member="NewsFeed" ThisKey="Id" OtherKey="UserId" Type="NewsFeed" />
+      <Association Name="Users_Subscription" Member="Subscription" ThisKey="Id" OtherKey="IdUser" Type="Subscription" />
+      <Association Name="Users_Subscription1" Member="Subscription1" ThisKey="Id" OtherKey="IdSubscriber" Type="Subscription" />
+    </Type>
+  </Table>
+</Database>

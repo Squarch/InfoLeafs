@@ -80,3 +80,5 @@ H:\InfoLeafs\InfoLeafs\bin\System.Web.Http.WebHost.xml
 H:\InfoLeafs\InfoLeafs\obj\Debug\InfoLeafs.csprojResolveAssemblyReference.cache
 H:\InfoLeafs\InfoLeafs\obj\Debug\InfoLeafs.dll
 H:\InfoLeafs\InfoLeafs\obj\Debug\InfoLeafs.pdb
+d:\Documents\GitHub\InfoLeafs\InfoLeafs\obj\Debug\InfoLeafs.csprojResolveAssemblyReference.cache
+d:\Documents\GitHub\InfoLeafs\InfoLeafs\obj\Debug\InfoLeafs.csprojFakesResolveAssemblyReference.cache
