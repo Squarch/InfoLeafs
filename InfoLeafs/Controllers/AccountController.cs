@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using InfoLeafs.Models;
 
 namespace InfoLeafs.Controllers
 {
@@ -27,14 +28,25 @@ namespace InfoLeafs.Controllers
         {
             return View();
         }
-        
+
+        [HttpPost]
+        public void Login(LoginViewModel model)
+        {
+                        
+        }
         /// <summary>
         /// Форма регистрации
         /// </summary>
+        [HttpGet]
         public ActionResult Registration()
         {
             return View();
         }
-        
+
+        [HttpPost]
+        public void Registration(RegisterViewModel model)
+        {
+            
+        }
     }
 }
