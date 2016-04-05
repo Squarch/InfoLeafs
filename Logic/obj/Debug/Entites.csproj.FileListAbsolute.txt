@@ -1,0 +1,6 @@
+d:\Documents\GitHub\InfoLeafs\Logic\obj\Debug\Entites.csprojResolveAssemblyReference.cache
+d:\Documents\GitHub\InfoLeafs\Logic\bin\Debug\Logic.dll.config
+d:\Documents\GitHub\InfoLeafs\Logic\bin\Debug\Logic.dll
+d:\Documents\GitHub\InfoLeafs\Logic\bin\Debug\Logic.pdb
+d:\Documents\GitHub\InfoLeafs\Logic\obj\Debug\Logic.dll
+d:\Documents\GitHub\InfoLeafs\Logic\obj\Debug\Logic.pdb

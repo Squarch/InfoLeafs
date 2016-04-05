@@ -1,0 +1,7 @@
+d:\Documents\GitHub\InfoLeafs\Interfaces\bin\Debug\Interfaces.dll
+d:\Documents\GitHub\InfoLeafs\Interfaces\bin\Debug\Interfaces.pdb
+d:\Documents\GitHub\InfoLeafs\Interfaces\bin\Debug\Logic.dll
+d:\Documents\GitHub\InfoLeafs\Interfaces\bin\Debug\Logic.pdb
+d:\Documents\GitHub\InfoLeafs\Interfaces\obj\Debug\Interfaces.csprojResolveAssemblyReference.cache
+d:\Documents\GitHub\InfoLeafs\Interfaces\obj\Debug\Interfaces.dll
+d:\Documents\GitHub\InfoLeafs\Interfaces\obj\Debug\Interfaces.pdb

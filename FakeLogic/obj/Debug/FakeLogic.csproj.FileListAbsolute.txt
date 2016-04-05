@@ -1,0 +1,9 @@
+d:\Documents\GitHub\InfoLeafs\FakeLogic\bin\Debug\FakeLogic.dll
+d:\Documents\GitHub\InfoLeafs\FakeLogic\bin\Debug\FakeLogic.pdb
+d:\Documents\GitHub\InfoLeafs\FakeLogic\bin\Debug\Interfaces.dll
+d:\Documents\GitHub\InfoLeafs\FakeLogic\bin\Debug\Logic.dll
+d:\Documents\GitHub\InfoLeafs\FakeLogic\bin\Debug\Interfaces.pdb
+d:\Documents\GitHub\InfoLeafs\FakeLogic\bin\Debug\Logic.pdb
+d:\Documents\GitHub\InfoLeafs\FakeLogic\obj\Debug\FakeLogic.csprojResolveAssemblyReference.cache
+d:\Documents\GitHub\InfoLeafs\FakeLogic\obj\Debug\FakeLogic.dll
+d:\Documents\GitHub\InfoLeafs\FakeLogic\obj\Debug\FakeLogic.pdb
